@@ -1,0 +1,203 @@
+" [ PLUGINS ]
+
+runtime ftplugin/man.vim
+
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/vim-plug'
+
+"Themes plugins
+Plug 'itchyny/lightline.vim'
+Plug 'arcticicestudio/nord-vim'
+Plug 'ryanpcmcquen/true-monochrome_vim'
+Plug 'colepeters/spacemacs-theme.vim'
+Plug 'altercation/vim-colors-solarized'
+Plug 'itchyny/landscape.vim'
+Plug 'nanotech/jellybeans.vim'
+Plug 'KKPMW/moonshine-vim'
+Plug 'reedes/vim-colors-pencil'
+Plug 'rhysd/vim-color-spring-night' 
+" also provides: let g:airline_theme = 'spring_night'
+Plug 'srcery-colors/srcery-vim'
+Plug 'dracula/dracula-theme'
+Plug 'joshdick/onedark.vim'
+Plug 'sickill/vim-monokai'
+
+"Programming plugins
+Plug 'w0rp/ale', { 'on': 'Ale' }
+"Plug 'Valloric/YouCompleteMe'
+Plug 'ternjs/tern_for_vim'
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+Plug 'google/vim-glaive'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'airblade/vim-gitgutter'
+
+" Misc plugins
+"Plug 'henrik/vim-indexed-search'
+Plug 'google/vim-searchindex'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'scrooloose/nerdcommenter'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'qpkorr/vim-bufkill'
+Plug 'majutsushi/tagbar'
+Plug 'inkarkat/vim-ingo-library'
+Plug 'bronson/vim-visual-star-search'
+Plug 'jceb/vim-orgmode'
+Plug 'fidian/hexmode', { 'on': 'Hexmode' }
+"Plug 'vim-scripts/hexman.vim'
+Plug 'mbbill/undotree'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'vim-voom/VOoM'
+Plug 'yegappan/mru'
+Plug 'tpope/vim-speeddating'    " for org mode
+Plug 'tmux-plugins/vim-tmux'
+Plug 'kshenoy/vim-signature'
+Plug 'chrisbra/Colorizer'
+Plug 'chrisbra/DynamicSigns'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'Yggdroot/indentLine'
+Plug 'mileszs/ack.vim'
+"Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
+Plug 'pseewald/vim-anyfold'
+Plug 'vim-scripts/MultipleSearch'
+
+Plug 'vim-scripts/WholeLineColor'
+"Plug 'vim-scripts/Mark', { 'frozen': 1 }
+Plug 'inkarkat/vim-mark'
+
+"Plug 'garbas/vim-snipmate'
+Plug 'SirVer/ultisnips'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'honza/vim-snippets'
+
+Plug 'chrisbra/csv.vim'
+"Plug 'xolox/vim-easytags'
+Plug 'elig0n/vim-easytags'
+Plug 'xolox/vim-misc'
+
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-line'
+Plug 'kana/vim-textobj-entire'
+Plug 'kana/vim-textobj-fold'
+Plug 'kana/vim-textobj-datetime'
+Plug 'kana/vim-textobj-function'
+Plug 'kana/vim-textobj-indent'
+Plug 'bps/vim-textobj-python'
+Plug 'tkhren/vim-textobj-numeral'
+
+Plug 'coderifous/textobj-word-column.vim'
+Plug 'inkarkat/vim-ExtractMatches'
+Plug 'inkarkat/vim-PatternsOnText'
+Plug 'inkarkat/vim-EditSimilar'
+
+" inkarkat/vim-cloneSimiliar
+
+Plug 'tpope/vim-unimpaired'
+Plug 'dhruvasagar/vim-zoom'
+
+Plug 'glts/vim-magnum'
+Plug 'glts/vim-radical'
+Plug 'vim-scripts/clone'
+
+" Alignment 
+Plug 'junegunn/vim-easy-align'
+
+" Calendar
+Plug 'itchyny/calendar.vim'
+Plug 'mattn/calendar-vim', { 'on': 'MattnCalendar' }
+
+Plug 'vim-scripts/utl.vim'
+Plug 'vimwiki/vimwiki'
+
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+"Plug 'gabrielelana/vim-markdown'
+
+Plug 'inkarkat/vim-visualrepeat'
+Plug 'tpope/vim-repeat'
+
+" map honza/vim-snippets<buffer> ,p oiPlug ''<esc>
+" s/\('\)\@!https:\/\/github.com\///
+
+"Alternative undotree:
+" https://github.com/simnalamburt/vim-mundo
+" https://github.com/chrisbra/histwin.vim
+"Plug 'neomake/neomake'
+"Plug 'ntpeters/vim-airline-colornum'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
+"Plug 'chaoren/vim-wordmotion'
+"Plug 'vim-ctrlspace/vim-ctrlspace'
+"Plug 'Shougo/unite.vim'
+"Plug 'Shougo/vimproc.vim'
+"Plug 'ron89/thesaurus_query.vim'
+"Plug 'szw/vim-maximizer'
+"
+call plug#end()
+
+" Plugins Settings
+let g:tagbar_ctags_bin='/usr/bin/ctags'
+let g:tagbar_width=30
+let g:tagbar_left = 1
+let g:tagbar_case_insensitive = 1
+let g:tagbar_compact = 1
+"let g:tagbar_expand = 1
+let g:tagbar_singleclick = 1
+let g:tagbar_autoshowtag = 1
+let g:tagbar_autofocus = 1
+let g:tagbar_updateonsave_maxlines = 1
+let g:tagbar_previewwin_pos = "rightbelow"
+
+let g:plug_window='topleft new'
+let g:hexmode_patterns = '*.bin,*.exe,*.dat,*.o'
+let g:hexmode_autodetect = 1
+
+let g:org_agenda_files = [ '~/txt/notes.org' ]
+
+"let g:ctrlp_map = '<C-p>'
+let g:ctrlp_cmd = 'CtrlPMRUFiles'
+let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:7,results:500'
+let g:ctrlp_match_window_reversed=0
+let g:ctrlp_mruf_max = 50
+"let g:ctrlp_by_filename = 1
+let g:ctrlp_prompt_mappings = {
+			\ 'PrtSelectMove("u")': ['<C-Backspace>'],
+			\ 'PrtSelectMove("d")':   ['<C-Space>'],
+			\ }
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+" for pattern highlighting
+hi Identifier ctermfg=9
+
+let g:SignatureDeleteConfirmation = 1
+let g:SignaturePurgeConfirmation = 1
+let g:colorizer_auto_filetype='lua,css,html'
+let g:Signs_Diff = 1
+autocmd Filetype * AnyFoldActivate
+set foldlevel=99
+let g:solarized_termcolors=256
+"let g:indent_guides_enable_on_vim_startup = 1
+let g:colorizer_disable_bufleave = 1
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+let g:wholelinecolor_next="<space><c-n>"
+let g:wholelinecolor_prev="<space><c-p>"
+
+xmap ga <Plug>(EasyAlign)
+vmap <Enter> <Plug>(EasyAlign)
+
+let g:ycm_autoclose_preview_window_after_completion = 1
+
+let NERDTreeQuitOnOpen = 3
+
+let g:easytags_suppress_report = 1
+
+let g:calendar_google_calendar = 1
+let g:calendar_google_task = 1
+
+set signcolumn=auto
+
