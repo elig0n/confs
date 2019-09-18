@@ -1,0 +1,114 @@
+$include /etc/inputrc
+
+$if Bash
+# Quoting	
+"\C-x\"": '\"\"\C-b'
+"\C-x\'": "\'\'\C-b"
+#"\"": '""\C-b'
+#"\'": "''\C-b"
+
+"\C-xp": "PATH=${PATH}\e\C-e\C-a\ef\C-f"
+"\C-xq": "\eb\"\ef\""
+"\C-xr": redraw-current-line
+"\C-o": "\C-asudo \C-e"
+"\C-v": "\C-e |& less\C-j"
+"\e,": "\C-a\ed"
+"\e3~": "\ed"
+"\eOc": "\ef"
+"\eOd": "\eb"
+"\e[1;5F": "\C-k"	# ctrl-end
+"\e[1;5H": "\C-u"   # ctrl-home
+"\e[3;3~": "\ed"  #alt+del
+"\e[3;5~": "\ed"  #ctrl+del
+"\e[3^": kill-word
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+"\e[Z": menu-complete-backward
+"\e\C-U": upcase-word
+"\e\C-k": kill-whole-line
+"\e\C-l": downcase-word
+"\e\C-d": "\ !#:$\e\C-e\ "
+"\e\C-p": previous-screen-line
+"\e\C-m": print-last-kbd-macro
+"\e\C-n": next-screen-line
+"\e\C-o": operate-and-get-next
+"\e\C-r": overwrite-mode
+"\e\C-w": vi-editing-mode
+"\e\C-x": "\C-zbg\C-m" #emacs-editing-mode
+#"\ea": "\C-a"
+"\ea": "\eb\eb\ef"
+"\eF": "\C-] "
+"\eB": "\e\C-] " 
+"\ee": "\C-e"
+"\eh": "\C-e --help"
+"\ev": "\C-e --version"
+"\ek": dabbrev-expand 
+"\el": "!#:$\e\C-e "
+"\ex": "\C-a\ed"
+"\em": "\C-e\C-w"
+"\en": history-search-forward 
+"\ep": history-search-backward
+"\es": "\C-a"
+"\eu": undo
+#"\ew": copy-region-as-kill
+"\ew": kill-region
+#"\ex": "\ed\e\C-h"
+"\ey": yank-pop
+TAB: menu-complete
+#"\e[3~": kill-word
+# F1 for emacs F2 for vi 
+#"^[OP": emacs-editing-mode
+#"^[OQ": vi-editing-mode
+$endif
+
+# Settings 
+
+set page-completions on
+ 
+set print-completions-horizontally on
+ 
+set completion-ignore-case on
+ 
+set bell-style visible 
+ 
+set show-all-if-ambiguous on
+ 
+set show-all-if-unmodified on
+ 
+set visible-stats on
+ 
+set match-hidden-files off
+ 
+set colored-completion-prefix On
+ 
+set colored-stats on
+ 
+set enable-bracketed-paste off
+ 
+# if file is complete don't double complete in further tab clicks
+set skip-completed-text on  
+ 
+# in completions makes _ and - interchangeable
+set completion-map-case on
+ 
+# blink matching parentheses
+set blink-matching-paren on
+ 
+set echo-control-characters On
+
+# Display one completion per line 
+set completion-display-width -1 
+
+set completion-query-items 500
+
+# history cursor preserved 
+set history-preserve-point On
+
+set mark-modified-lines Off
+ 
+set mark-symlinked-directories On
+
+#set completion-prefix-display-length 5
+
+set show-mode-in-prompt On
+
