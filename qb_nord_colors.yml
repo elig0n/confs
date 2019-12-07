@@ -1,0 +1,83 @@
+  colors.completion.category.bg:
+    global: 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #3b4252, stop:1 #4c566a)'
+  colors.completion.category.border.bottom:
+    global: gray
+  colors.completion.even.bg:
+    global: '#3b4252'
+  colors.completion.item.selected.bg:
+    global: '#d8dee9'
+  colors.completion.item.selected.border.bottom:
+    global: '#1140BE'
+  colors.completion.item.selected.border.top:
+    global: '#1140BE'
+  colors.completion.item.selected.fg:
+    global: '#2e3440'
+  colors.completion.match.fg:
+    global: lime
+  colors.completion.odd.bg:
+    global: '#2e3440'
+  colors.completion.scrollbar.bg:
+    global: '#A8A8A8'
+  colors.completion.scrollbar.fg:
+    global: grey
+  colors.downloads.error.bg:
+    global: '#bf616a'
+  colors.messages.error.bg:
+    global: '#bf616a'
+  colors.prompts.bg:
+    global: '#444444'
+  colors.statusbar.command.bg:
+    global: #000000
+  colors.statusbar.command.fg:
+    global: #ffffff
+  colors.statusbar.command.private.bg:
+    global: grey
+  colors.statusbar.insert.bg:
+    global: blue
+  colors.statusbar.normal.bg:
+    global: '#3B4A50'
+  colors.statusbar.url.fg:
+    global: #ffffff
+  colors.statusbar.url.hover.fg:
+    global: #ffffff
+  colors.statusbar.url.success.http.fg:
+    global: #ffffff
+  colors.statusbar.url.success.https.fg:
+    global: lightgreen
+  colors.tabs.bar.bg:
+    global: '#2e3440'
+  colors.tabs.even.bg:
+    global: '#2e3440'
+  colors.tabs.even.fg:
+    global: #ffffff
+  colors.tabs.indicator.start:
+    global: '#0000aa'
+  colors.tabs.indicator.stop:
+    global: '#00aa00'
+  colors.tabs.odd.bg:
+    global: '#4c566a'
+  colors.tabs.odd.fg:
+    global: #ffffff
+  colors.tabs.selected.even.bg:
+    global: '#d8dee9'
+  colors.tabs.selected.even.fg:
+    global: '#434c5e'
+  colors.tabs.selected.odd.bg:
+    global: '#d8dee9'
+  colors.tabs.selected.odd.fg:
+    global: '#434c5e'
+    
+  fonts.completion.category:
+    global: bold 11pt Source Code Pro
+  fonts.completion.entry:
+    global: 12pt Source Code Pro Regular
+  fonts.downloads:
+    global: 13pt Source Code Pro Light
+  fonts.hints:
+    global: bold 13pt fixed
+  fonts.messages.error:
+    global: 11pt Fixed
+  fonts.statusbar:
+    global: 12pt monospace bold
+  fonts.tabs:
+    global: 10pt Source Code Pro Regular
